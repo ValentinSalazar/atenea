@@ -1,104 +1,30 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Diseno  } from "../../components/Diseno";
 import imageDiseno from '../../assets/design.png'
 import imageDesarrollo from '../../assets/desarrollo.png'
 import imageMarketing from '../../assets/marketing.png'
 import imageSeo from '../../assets/seo.png'
+import { ServiceCard } from "../../components/ServiceCard";
 
 export const Servicios = () => {
-  const [isHovered, setIsHovered] = useState(false);
-  const [secondIsHovered, setSecondIsHovered] = useState(false);
-  const [thirdIsHovered, setThirdIsHovered] = useState(false);
-  const [fourthIsHovered, setFourthIsHovered] = useState(false);
 
-  const handleMouseEnter = (setter) => {
-    setter(true);
-  };
-
-  const handleMouseLeave = (setter) => {
-    setter(false);
-  };
 
   return (
-    <>
-      <div className="servicios__container">
-          <div
-            className="servicios__container-diseno"
-            onMouseEnter={() => handleMouseEnter(setIsHovered)}
-            onMouseLeave={() => handleMouseLeave(setIsHovered)}
-          >
-            <Link
-              style={{ textDecoration: "none", color: "#fff", display:'flex', justifyContent: 'center' }}
-              to="/servicios/diseño"
-            >
-              {isHovered ? (
-                <h5 className="hoverEffect"
-                >
-                  DISEÑO
-                </h5>
-              ) : (
-                <Diseno image={imageDiseno} text="DISEÑO" />
-              )}
-            </Link>
-          </div>
-          <div
-            className="servicios__container-desarollo"
-            onMouseEnter={() => handleMouseEnter(setSecondIsHovered)}
-            onMouseLeave={() => handleMouseLeave(setSecondIsHovered)}
-          >
-            <Link
-              style={{ textDecoration: "none", color: "#fff", display:'flex', justifyContent: 'center' }}
-              to="/servicios/desarrollo"
-            >
-              {secondIsHovered ? (
-                <h5 className="hoverEffect"
-                >
-                  DESARROLLO
-                </h5>
-              ) : (
-                <Diseno image={imageDesarrollo} text="DESARROLLO" />
-              )}
-            </Link>
-          </div>
-          <div
-            className="servicios__container-marketing"
-            onMouseEnter={() => handleMouseEnter(setThirdIsHovered)}
-            onMouseLeave={() => handleMouseLeave(setThirdIsHovered)}
-          >
-            <Link
-              style={{ textDecoration: "none", color: "#fff", display:'flex', justifyContent: 'center' }}
-              to="/servicios/marketing"
-            >
-              {thirdIsHovered ? (
-                <h5 className="hoverEffect"
-                >
-                  MARKETING
-                </h5>
-              ) : (
-                <Diseno image={imageMarketing} text="MARKETING" />
-              )}
-            </Link>
-          </div>
-          <div
-            className="servicios__container-seo"
-            onMouseEnter={() => handleMouseEnter(setFourthIsHovered)}
-            onMouseLeave={() => handleMouseLeave(setFourthIsHovered)}
-          >
-            <Link
-              style={{ textDecoration: "none", color: "#fff", display:'flex', justifyContent: 'center' }}
-              to="/servicios/seo"
-            >
-              {fourthIsHovered ? (
-                <h5 className="hoverEffect">
-                  SEO
-                </h5>
-              ) : (
-                <Diseno image={imageSeo} text="SEO" />
-              )}
-            </Link>
-          </div>
-        </div>
-    </>
+    <div className="flex flex-col items-center animate-fade">
+      <h3 className="text-center mb-5 text-primaryColor text-xs tracking-wider lg:text-xl">Click para ver más información <br className="md:hidden"/> acerca de nuestros servicios.</h3>
+      <div className="flex gap-5 flex-col md:grid md:grid-cols-2 md:grid-rows-2 md:gap-10 lg:gap-20 lg:flex lg:flex-row">
+        <Link to='diseño'>
+          <ServiceCard service='Diseño' imageURL={imageDiseno}/>
+        </Link>
+        <Link to='desarrollo'>
+          <ServiceCard service='Desarrollo' imageURL={imageDesarrollo}/>
+        </Link>
+        <Link to='marketing'>
+          <ServiceCard service='Marketing' imageURL={imageMarketing}/>
+        </Link>
+        <Link to='seo'>
+          <ServiceCard service='SEO' imageURL={imageSeo}/>
+        </Link>
+      </div>
+    </div>
   );
 };

@@ -3,14 +3,20 @@ export default {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      width: {
+        semiFull: '90vw'
+      },
+      height: {
+        semiFull: '90vh'
+      },
       fontFamily: {
         akshar: 'akshar',
         poppins: 'poppins'
       },
       letterSpacing: {
-        bigSpacing: '6.5px',
-        bigSpacingL: '10px',
-        bigSpacingXL: '20px',
+        bigSpacing: '0.4em',
+        bigSpacingL: '0.5em',
+        bigSpacingXL: '0.8em',
       },
       colors: {
         primaryColor: '#212121',

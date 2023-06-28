@@ -1,16 +1,10 @@
-import { motion } from "framer-motion"
-import { Sidebar } from "../../components/Sidebar"
+import { BackArrow } from "../../components/BackArrow"
+
 export const ServicioMarketing = () => {
     return(
-        <motion.div
-        initial={{x: '100%'}}
-        animate={{x: '0%'}}
-        transition={{ duration: 0.3, ease: "easeOut"}}
-        exit={{ x: "-100%"}}>
-            <div className="container__servicios--especific">
-            <div className="container__servicios-content">
-                <Sidebar text='MARKETING'/>
-                <p>
+        <div className="flex items-center flex-col gap-10 animate-fade">
+            <BackArrow />
+            <p className="text-xs text-center leading-4 md:text-lg lg:text-xl small:text-xxs small:leading-3">
                 El marketing desempeña un <b>papel fundamental para que las empresas 
                 logren destacar,<br /></b> llegar a su público objetivo y alcanzar el éxito. <br />
                 <br />
@@ -25,11 +19,9 @@ export const ServicioMarketing = () => {
                 y desarrollo en el área del marketing es el <br /><b>análisis de datos y la medición de resultados.</b> <br />
                 <br />
                 Utilizando herramientas y tecnologías especializadas, 
-                estas empresas recopilan y <b>analizan datos para evaluar el 
+                estas empresas recopilan y <b><br className="hidden lg:block" />analizan datos para evaluar el 
                 rendimiento de las estrategias y campañas de marketing.</b> 
                 </p>
-            </div>
         </div>
-        </motion.div>
     )
 }

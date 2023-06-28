@@ -3,9 +3,9 @@ import { Button } from "../../components/Button";
 export const Inicio = () => {
   return (
     <>
-      <div id="inicio" className="flex flex-col h-screen justify-center items-center animate-fade">
-        <div className="relative bottom-20 flex flex-col gap-2 w-full items-center">
-        <div className="logo relative w-96 md:w-full md:scale-50 md:bottom-0 small:w-80">
+      <div id="inicio" className="flex flex-col h-semiFull justify-center items-center animate-fade">
+        <div className="flex flex-col 2 w-screen items-center">
+        <div className="logo w-96 md:w-full md:scale-50 md:bottom-0 small:w-80 px-2">
           <svg
             viewBox="0 0 254 42"
             fill="#212121"
@@ -49,11 +49,12 @@ export const Inicio = () => {
             />
           </svg>
         </div>
-        <div className="text-center text-2xl font-akshar uppercase tracking-bigSpacing 
+        <div className="text-center text-2xl font-akshar uppercase tracking-bigSpacing
         md:text-4xl md:tracking-bigSpacingL 
         lg:tracking-bigSpacingXL
-        small:text-lg">
-          <h3>Designs & Development</h3>
+        small:text-lg
+        lg:relative lg:bottom-10">
+          <h3 className="text-sm md:text-2xl lg:text-4xl">Designs & Development</h3>
         </div>
         </div>
         <Button text="CONTACTO" />

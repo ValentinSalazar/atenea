@@ -7,7 +7,7 @@ import { Contacto } from "../pages/Contacto/Contacto";
 export const AnimatedRouter = () => {
   const location = useLocation();
   return (
-    <section className="mt-20 relative z-20 mb-10 w-full">
+    <section className="relative z-20 w-screen h-semiFull flex justify-center items-center">
       <Routes location={location.pathname} key={location.pathname}>
         <Route path="/" element={<Inicio />} />
         <Route path="/nosotros" element={<Nosotros />} />
