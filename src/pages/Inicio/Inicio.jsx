@@ -3,7 +3,7 @@ import { Button } from "../../components/Button";
 export const Inicio = () => {
   return (
     <>
-      <div id="inicio" className="flex flex-col h-semiFull justify-center items-center animate-fade">
+      <div id="inicio" className="flex flex-col h-semiFull justify-center items-center animate-fade relative z-50">
         <div className="flex flex-col 2 w-screen items-center">
         <div className="logo w-96 md:w-full md:scale-50 md:bottom-0 small:w-80 px-2">
           <svg
