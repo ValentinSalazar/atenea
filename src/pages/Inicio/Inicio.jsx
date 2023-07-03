@@ -54,7 +54,7 @@ export const Inicio = () => {
         lg:tracking-bigSpacingXL
         small:text-lg
         lg:relative lg:bottom-10">
-          <h3 className="text-sm md:text-2xl lg:text-4xl">Designs & Development</h3>
+          <h3 className="text-sm md:text-2xl lg:text-4xl text-primaryColor">Designs & Development</h3>
         </div>
         </div>
         <Button text="CONTACTO" />

@@ -6,3 +6,8 @@
 body {
     overflow: hidden;
 }
+
+
+nav a {
+    color: #212121;
+}
