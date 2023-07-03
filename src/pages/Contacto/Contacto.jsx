@@ -35,7 +35,7 @@ export const Contacto = () => {
   };
 
   return (
-    <div className="flex flex-col small:text-xs">
+    <div className="flex flex-col small:text-xs animate-fade">
       <h3 className="text-4xl text-center font-semibold tracking-widest md:text-5xl lg:text-7xl small:text-3xl">
         CONTACTO
       </h3>
