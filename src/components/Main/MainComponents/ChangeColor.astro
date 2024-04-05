@@ -1,0 +1,46 @@
+---
+---
+
+<script is:inline>
+    function changeColors(color){
+        const logos = document.querySelectorAll('svg #logo');
+        const horario = document.querySelector('#clock')
+        const titulos = document.querySelectorAll('h1.pickedColor');
+        const footerSocials = document.querySelector('header.pickedColor');
+        const botonMail = document.querySelector('button.pickedColor')
+        const LineasResaltadas = document.querySelector('span.pickedColor');
+        const palabrasResaltadas = document.querySelector('b.pickedColor');
+
+        logos.forEach(logo => {
+            logo.setAttribute('fill', color);
+        });
+
+        titulos.forEach(titulo => {
+            titulo.setAttribute('style', `color:${color};`);
+        })
+        horario.setAttribute('style', `color:${color}`);
+        footerSocials.setAttribute('style', `background-color:${color}`);
+        botonMail.setAttribute('style', `background-color:${color}`);
+        LineasResaltadas.setAttribute('style', `background-color:${color};`);
+        palabrasResaltadas.setAttribute('style', `color:${color};`);
+    }
+</script>
+
+<div class="flex gap-3 justify-center pt-3">
+    <div id="firstButton" class="w-8 h-8 sm:w-10 sm:h-10 border rounded bg-primaryColor cursor-pointer" color="red" onclick="changeColors('#00FFF0')">
+
+    </div>
+    <div id="secondButton" class="w-8 h-8 sm:w-10 sm:h-10 border rounded bg-[#FF6B00] cursor-pointer" onclick="changeColors('#FF6B00')">
+            
+    </div>
+
+    <div id="fourthButton" class="w-8 h-8 sm:w-10 sm:h-10 border rounded bg-[#FF006B] cursor-pointer" onclick="changeColors('#FF006B')">
+            
+    </div>
+
+</div>
+
+
+
+
+

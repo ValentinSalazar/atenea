@@ -1,0 +1,34 @@
+---
+import Redes from "../Redes.astro";
+import Mail from "../RedesSociales/Mail.astro";
+import WhatsApp from "../RedesSociales/WhatsApp.astro";
+---
+
+<section class="w-screen bg-white flex flex-col">
+    <header class="w-screen py-5 bg-primaryColor flex gap-5 justify-center pickedColor">
+        <Redes ancho="40" alto="40"/>
+    </header>
+    <h1 class="text-[2.6rem] leading-10 text-primaryColor font-black px-5 pt-14 pb-7 text-left pickedColor">
+        NOS ENCANTA 
+        CREAR MARCAS 
+        Y SITIOS WEBS,
+    </h1>
+    <p class="max-w-xl text-2xl px-5 leading-10 bg-white">
+        nos inspira ver como se fortacele una marca,
+        mejorando sus metricas, <br/>
+        digitalizando sus ideas, <br/>
+        y por sobre todo, <br/>
+        ofreciendo un mejor producto.
+        <br/> <br/>
+    </p>
+    <footer class="px-5 bg-white w-screen flex flex-col gap-3 font-bold pb-5 ">
+        <button class="bg-[#212121] py-3 px-5 w-full max-w-[350px] text-left rounded text-white flex gap-3">
+            <WhatsApp ancho="24" alto="24"/>
+            +54 3329 538903
+        </button>
+        <button class="bg-primaryColor py-3 px-5 w-full max-w-[350px] text-left rounded text-[#212121] flex gap-3 pickedColor">
+            <Mail ancho="24" alto="24"/>
+            ATENEAMKTT@GMAIL.COM
+        </button>
+    </footer>
+</section>

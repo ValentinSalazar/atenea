@@ -1,0 +1,25 @@
+<footer class="flex flex-col items-center gap-2 sm:gap-0 pt-5 sm:pt-10">
+    <h3 class="pickedColor leading-[0px] font-bold text-primaryColor sm:text-xl">
+        <span id="clock"></span>
+    </h3>
+    <p class="text-white font-light sm:text-xl">buenos Aires, argentina.</p>
+
+    <script is:inline>
+        const clockElement = document.getElementById('clock');
+
+        function updateClock() {
+            const d = new Date();
+            const date = d.toLocaleTimeString("es-AR", {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            clockElement.textContent = date;
+        }
+        
+        updateClock(); 
+        
+        setInterval(() => {
+            updateClock(); 
+        }, 60000);
+    </script>
+</footer>

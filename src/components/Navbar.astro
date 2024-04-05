@@ -1,0 +1,55 @@
+---
+import CerrarMenuBtn from "./CerrarMenuBtn.astro";
+import Logo from "./Logo.astro";
+import MenuBtn from "./MenuBtn.astro";
+
+
+---
+
+<header class="text-white">
+    <nav class="flex w-[100%] justify-between">
+        <div class="items-center gap-1 flex">
+            <Logo classes="w-[20px]"/>
+            <h3 class="xs:text-lg font-medium">atenea</h3>
+        </div>
+        <ul class="xs:hidden md:hidden">
+            <li>
+                <a href="">Inicio</a>
+            </li>
+            <li>
+                <a href="">Diseno Grafico</a>
+            </li>
+            <li>
+                <a href="">Redes Sociales</a>
+            </li>
+            <li>
+                <a href="">Desarrollo Web</a>
+            </li>
+        </ul>
+
+        <button id="menuButton" class="md:hidden">
+            <MenuBtn />
+        </button>
+
+        <ul id="menuMobile" class="w-screen bg-[#212121] z-50 text-center flex-col absolute top-0 animate__animated animate__slideInDown right-0 left-0 mx-auto hidden py-10 md:flex md:flex-row md:relative md:bg-transparent md:gap-5 md:justify-end">
+            <div class="absolute right-5 md:hidden">
+                <CerrarMenuBtn />
+            </div>
+            <li class="py-5">
+                <a href="">Inicio</a>
+            </li>
+            <li class="py-5">
+                <a href="">Diseno Grafico</a>
+            </li>
+            <li class="py-5">
+                <a href="">Redes Sociales</a>
+            </li>
+            <li class="py-5">
+                <a href="">Pagina Web</a>
+            </li>
+            <li class="py-5">
+                <a href="">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+</header>
