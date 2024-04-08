@@ -7,7 +7,7 @@ import ChangeColor from "./MainComponents/ChangeColor.astro";
 import Timer from './MainComponents/Timer.astro'
 ---
 
-<main class="xs:h-screen xs:w-screen bg-mainBkg bg-no-repeat bg-fixed xl:bg-center xl:bg-contain xs:bg-[-500px] xs:bg-cover">
+<main id="mainPage" class="xs:h-screen xs:w-screen bg-mainBkg bg-no-repeat bg-fixed xl:bg-center xl:bg-contain xs:bg-[-500px] xs:bg-cover">
     <div class="w-screen h-screen bg-black/50 absolute left-0 top-0 xs:w-screen xs:h-screen xs:px-5 xs:py-10 flex flex-col xl:px-[60px] xl:py-[30px]">
         <Navbar />
         <div class="flex justify-center xs:pt-24">
@@ -18,8 +18,7 @@ import Timer from './MainComponents/Timer.astro'
         </div>
         <h1 class="text-white text-4xl text-center pt-10 font-[900] flex flex-col sm:text-5xl">DISEÑAMOS<span class="font-extralight leading-8">TU MARCA</span></h1>
         <div class="sm:flex sm:flex-col sm:gap">
-            <p class="lowercase text-center text-white pt-5 text-sm font-light sm:text-xl sm:pt-10">ELEGÍ TU COLOR</p>
-        <ChangeColor />
+        
         <Timer />
         </div>
     </div>

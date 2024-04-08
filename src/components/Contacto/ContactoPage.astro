@@ -4,7 +4,7 @@ import Mail from "../RedesSociales/Mail.astro";
 import WhatsApp from "../RedesSociales/WhatsApp.astro";
 ---
 
-<section class="w-screen bg-white flex flex-col">
+<section id="contactoPage" class="w-screen bg-white flex flex-col">
     <header class="w-screen py-5 bg-primaryColor flex gap-5 justify-center pickedColor">
         <Redes ancho="40" alto="40"/>
     </header>
@@ -22,11 +22,11 @@ import WhatsApp from "../RedesSociales/WhatsApp.astro";
         <br/> <br/>
     </p>
     <footer class="px-5 bg-white w-screen flex flex-col gap-3 font-bold pb-5 ">
-        <button class="bg-[#212121] py-3 px-5 w-full max-w-[350px] text-left rounded text-white flex gap-3">
+        <a href="https://wa.me/543329538903?text=mensaje" target="_blank" class="bg-[#212121] py-3 px-5 w-full max-w-[350px] text-left rounded text-white flex gap-3 hover:bg-[#212121]/90 active:opacity-75">
             <WhatsApp ancho="24" alto="24"/>
             +54 3329 538903
-        </button>
-        <button class="bg-primaryColor py-3 px-5 w-full max-w-[350px] text-left rounded text-[#212121] flex gap-3 pickedColor">
+        </a>
+        <button class="bg-primaryColor py-3 px-5 w-full max-w-[350px] text-left rounded text-[#212121] flex gap-3 pickedColor hover:bg-primaryColor/90 active:text-white">
             <Mail ancho="24" alto="24"/>
             ATENEAMKTT@GMAIL.COM
         </button>

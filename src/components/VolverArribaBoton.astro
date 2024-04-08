@@ -1,0 +1,38 @@
+---
+const { ancho = 20, alto = 20 } = Astro.props;
+---
+
+
+<div id="volverArribaBtn" class="rounded bg-primaryColor fixed right-2 bottom-2 p-2 hidden">
+    <svg width=`${ancho}` height=`${alto}` viewBox="0 0 12 12" fill="#" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.7099 5.2899L6.70994 0.289896C6.61484 0.198856 6.50269 0.127491 6.37994 0.0798963C6.13648 -0.0201217 5.8634 -0.0201217 5.61994 0.0798963C5.49719 0.127491 5.38505 0.198856 5.28994 0.289896L0.289941 5.2899C0.196703 5.38314 0.122742 5.49382 0.0722818 5.61565C0.0218215 5.73747 -0.00415039 5.86804 -0.00415039 5.9999C-0.00415039 6.2662 0.101638 6.52159 0.289941 6.7099C0.478245 6.8982 0.73364 7.00399 0.999941 7.00399C1.26624 7.00399 1.52164 6.8982 1.70994 6.7099L4.99994 3.4099V10.9999C4.99994 11.2651 5.1053 11.5195 5.29283 11.707C5.48037 11.8945 5.73472 11.9999 5.99994 11.9999C6.26516 11.9999 6.51951 11.8945 6.70705 11.707C6.89458 11.5195 6.99994 11.2651 6.99994 10.9999V3.4099L10.2899 6.7099C10.3829 6.80362 10.4935 6.87802 10.6154 6.92879C10.7372 6.97956 10.8679 7.00569 10.9999 7.00569C11.132 7.00569 11.2627 6.97956 11.3845 6.92879C11.5064 6.87802 11.617 6.80362 11.7099 6.7099C11.8037 6.61693 11.8781 6.50633 11.9288 6.38447C11.9796 6.26261 12.0057 6.13191 12.0057 5.9999C12.0057 5.86788 11.9796 5.73718 11.9288 5.61532C11.8781 5.49346 11.8037 5.38286 11.7099 5.2899Z" fill="#fff"/>
+        </svg>  
+</div>
+
+
+
+<script>
+
+const volverArribaBtn = document.querySelector('#volverArribaBtn');
+
+// Función para mostrar u ocultar el botón basado en la posición de desplazamiento
+function toggleButtonVisibility() {
+    if (window.scrollY > 300) {
+        volverArribaBtn.classList.remove('hidden');
+    } else {
+        volverArribaBtn.classList.add('hidden');
+    }
+}
+
+// Mostrar u ocultar el botón al cargar la página
+toggleButtonVisibility();
+
+// Agregar un evento de desplazamiento para mostrar u ocultar el botón
+window.addEventListener('scroll', toggleButtonVisibility);
+
+// Agregar un evento de clic para desplazar la ventana hacia arriba
+volverArribaBtn.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+});
+
+</script>
