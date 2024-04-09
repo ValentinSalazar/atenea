@@ -3,13 +3,12 @@ import Logo from "../Logo.astro";
 import 'animate.css';
 import Lineas from "./MainComponents/Lineas.astro";
 import Navbar from '../Navbar.astro'
-import ChangeColor from "./MainComponents/ChangeColor.astro";
 import Timer from './MainComponents/Timer.astro'
 import AteneaIsologo from "../AteneaIsologo.astro";
 ---
 
 <main id="mainPage" class="xs:h-screen xs:w-screen bg-mainBkg bg-no-repeat bg-fixed xl:bg-center xl:bg-contain xs:bg-[-500px] xs:bg-cover">
-    <div class="w-screen h-screen bg-black/50 absolute left-0 top-0 xs:w-screen xs:h-screen xs:px-5 xs:py-10 flex flex-col xl:px-[60px] xl:py-[30px] md:justify-center">
+    <div class="w-screen xs:pt-10 sm:pt-20 h-screen bg-black/50 absolute left-0 top-0 xs:w-screen xs:h-screen xs:px-5 xs:py-10 flex flex-col xl:px-[60px] xl:py-[30px] md:justify-center">
         <Navbar />
         <div class="md:flex items-center justify-center md:gap-5 lg:gap-20">
             <div class="flex justify-center xs:pt-24">
@@ -18,8 +17,8 @@ import AteneaIsologo from "../AteneaIsologo.astro";
                     <Logo classes="w-[200px] sm:w-[300px] md:w-[350px] lg:w-[400px] xl:w-[500px]"/>
                 </div>
             </div>
-            <h1 class="text-white text-4xl text-center pt-10 font-[900] flex flex-col sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl md:text-left">DISEÑAMOS<span class="font-extralight leading-8 md:pt-5">TU MARCA</span>
-            </h1>
+                <h1 class="text-white text-4xl text-center pt-10 font-[900] flex flex-col sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl md:text-left">DISEÑAMOS<span class="font-extralight leading-8 md:pt-5">TU MARCA</span>
+                </h1>
             <div class="sm:flex sm:flex-col sm:gap">
         </div>
         <AteneaIsologo ancho="2500" alto="500"/>
