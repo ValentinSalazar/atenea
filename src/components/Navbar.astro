@@ -6,13 +6,13 @@ import MenuBtn from "./MenuBtn.astro";
 
 ---
 
-<header id="navbar" class="text-white fixed left-0 w-screen z-50 top-0 py-5">
+<header id="navbar" class="text-white fixed left-0 w-screen z-50 top-0 py-5 md:px-10">
     <nav class="flex justify-between px-5">
         <div class="items-center gap-1 flex">
-            <Logo classes="w-[20px]"/>
-            <h3 class="xs:text-lg font-medium">atenea</h3>
+            <Logo classes="w-[20px] xl:w-[40px]"/>
+            <h3 class="xs:text-lg font-medium xl:text-2xl">atenea</h3>
         </div>
-        <ul class="xs:hidden md:hidden">
+        <ul class="xs:hidden lg:hidden">
             <li>
                 <a href="#mainPage">Inicio</a>
             </li>
@@ -27,12 +27,12 @@ import MenuBtn from "./MenuBtn.astro";
             </li>
         </ul>
 
-        <button id="menuButton" class="md:hidden">
+        <button id="menuButton" class="lg:hidden">
             <MenuBtn />
         </button>
 
-        <ul id="menuMobile" class="w-screen bg-[#212121] z-[100] text-center flex-col fixed top-0 animate__animated animate__slideInDown right-0 left-0 mx-auto hidden py-10 md:flex md:flex-row md:relative md:bg-transparent md:gap-5 md:justify-end">
-            <div class="absolute right-5 md:hidden">
+        <ul id="menuMobile" class="w-screen bg-[#212121] z-[100] text-center flex-col fixed top-0 animate__animated animate__slideInDown right-0 left-0 mx-auto hidden xs:py-10 md:py-0 lg:flex lg:flex-row lg:relative lg:bg-transparent lg:gap-5 lg:justify-end">
+            <div class="absolute right-5 lg:hidden cursor-pointer">
                 <CerrarMenuBtn />
             </div>
             <li class="py-5">

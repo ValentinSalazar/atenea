@@ -2,18 +2,19 @@
 import Slider from "../Slider.astro";
 ---
 
-<section id="disenoGraficoPage" class="w-screen bg-white">
+<section id="disenoGraficoPage" class="w-screen bg-white md:pt-[80px] md:pb-[40px] md:px-24 lg:px-52">
     <header class="flex flex-col gap-5 pb-5 p-10">
-        <h1 class="text-[#333] text-4xl font-black">01</h1>
-        <h1 class="text-primaryColor text-4xl font-black pickedColor">DISEÑO <br />
+        <h1 class="text-[#333] text-4xl font-black md:text-5xl">01</h1>
+        <h1 class="text-primaryColor text-4xl font-black pickedColor md:text-5xl">DISEÑO <br />
             GRÁFICO
         </h1>
-        <span class="bg-primaryColor w-[25%] h-[4px] flex pickedColor"></span>
+        <span class="bg-primaryColor w-[25%] h-[4px] flex xl:w-[15%]"></span>
     </header>
-    <p class="max-w-xl text-balance font-light px-10">Desarrollamos tu <b class="font-semibold text-primaryColor">identidad visual</b>
+    <p class="max-w-xl text-balance font-light px-10 md:min-h-20 md:text-lg xl:text-xl">Desarrollamos tu <b class="font-semibold text-primaryColor">identidad visual</b>
         que destaque tus atributos distintivos y te <b class="font-semibold text-primaryColor">diferencie</b> de la competencia ante tus <b class="font-semibold text-primaryColor">
             potenciales clientes.
         </b>
     </p>
-    <Slider />
+    <Slider direction="flex-row"/>
 </section>
+

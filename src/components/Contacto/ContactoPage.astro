@@ -4,29 +4,29 @@ import Mail from "../RedesSociales/Mail.astro";
 import WhatsApp from "../RedesSociales/WhatsApp.astro";
 ---
 
-<section id="contactoPage" class="w-screen bg-white flex flex-col">
-    <header class="w-screen py-5 bg-primaryColor flex gap-5 justify-center pickedColor">
+<section id="contactoPage" class="w-screen bg-white flex flex-col md:h-[80vh] lg:justify-center lg:items-center relative md:px-24 lg:px-52">
+    <header class="w-screen py-5 bg-primaryColor flex gap-5 justify-center top-0 absolute">
         <Redes ancho="40" alto="40"/>
     </header>
-    <h1 class="text-[2.6rem] leading-10 text-primaryColor font-black px-5 pt-14 pb-7 text-left pickedColor">
+    <h1 class="text-[2.6rem] leading-10 text-primaryColor font-black px-5 pt-14 pb-7 text-left  lg:w-screen max-w-lg">
         NOS ENCANTA 
-        CREAR MARCAS 
+        CREAR MARCAS
         Y SITIOS WEBS,
     </h1>
-    <p class="max-w-xl text-2xl px-5 leading-10 bg-white">
-        nos inspira ver como se fortacele una marca,
+    <p class="max-w-xl lg:max-w-lg text-2xl px-5 leading-10 bg-white">
+        nos inspira ver como se fortacele una marca, <br class="hidden lg:block"/>
         mejorando sus metricas, <br/>
         digitalizando sus ideas, <br/>
         y por sobre todo, <br/>
         ofreciendo un mejor producto.
         <br/> <br/>
     </p>
-    <footer class="px-5 bg-white w-screen flex flex-col gap-3 font-bold pb-5 ">
-        <a href="https://wa.me/543329538903?text=mensaje" target="_blank" class="bg-[#212121] py-3 px-5 w-full max-w-[350px] text-left rounded text-white flex gap-3 hover:bg-[#212121]/90 active:opacity-75">
+    <footer class="px-5 bg-white w-screen flex flex-col gap-3 font-bold pb-5 lg:items-center">
+        <a href="https://wa.me/543329538903?text=mensaje" target="_blank" class="bg-[#212121] py-3 px-5 w-full text-left rounded text-white flex gap-3 hover:bg-[#212121]/90 active:opacity-75 lg:w-[500px]">
             <WhatsApp ancho="24" alto="24"/>
             +54 3329 538903
         </a>
-        <button class="bg-primaryColor py-3 px-5 w-full max-w-[350px] text-left rounded text-[#212121] flex gap-3 pickedColor hover:bg-primaryColor/90 active:text-white">
+        <button class="bg-primaryColor py-3 px-5 w-full lg:w-[500px] text-left rounded text-[#212121] flex gap-3 pickedColor hover:bg-primaryColor/90 active:text-white lg:w-[500px">
             <Mail ancho="24" alto="24"/>
             ATENEAMKTT@GMAIL.COM
         </button>
