@@ -21,6 +21,7 @@ export default {
 				'mainBkg': "url('/BG.png')",
 				'soialsBkg': "url('/section2BG.webp')",
 				'clientesBkg': "url('/ClientesBKG.jpg')",
+				'mainBkgMobile': "url('/BG.webp')"
 			}
 		},
 	},
